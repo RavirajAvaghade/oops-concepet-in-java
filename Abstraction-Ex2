@@ -1,0 +1,60 @@
+package Encapsulation;
+abstract class Bank
+{
+	abstract void getintrestrate();
+	
+	void display()
+	{
+		System.out.println("Welcome to the Bank");
+	}
+}
+class SBI extends Bank
+{
+
+	@Override
+	void getintrestrate() 
+	{
+		System.out.println("SBI Intrest rate is : 7%");
+	}
+	
+}
+class HDFC extends Bank
+{
+
+	@Override
+	void getintrestrate() 
+	{
+     System.out.println("HDFC intrest rate is : 8%");		
+	}
+	
+}
+class ICICI extends Bank
+{
+
+	@Override
+	void getintrestrate()
+	{
+      System.out.println("ICICI intrest rate is : 7.5%");	
+	}
+	
+}
+public class AbstractionEX2 
+{
+  public static void main(String[]args)
+  {
+	  System.out.println("======================");
+	  Bank B = new SBI();
+	  B.display();
+	  B.getintrestrate();
+	  System.out.println("======================");
+	  Bank B1 = new HDFC();
+	  B1.display();
+	  B1.getintrestrate();
+	  System.out.println("======================");
+	  Bank B2 = new ICICI();
+	  B2.display();
+	  B2.getintrestrate();
+	  System.out.println("======================");
+	  
+  }
+}
