@@ -1,0 +1,48 @@
+package Encapsulation;
+
+class pepole
+{
+	private int id;
+	private String name;
+	private int salary;
+	
+	public int getID()
+	{
+		return id;
+	}
+	public void setID(int id)
+	{
+		 this.id = id;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public int getSalary()
+	{
+		return salary;
+	}
+	public void setsalary(int salary)
+	{
+		this.salary = salary;
+	}
+}
+ 
+public class Example2
+{
+
+	public static void main(String[] args) 
+	{
+       pepole p = new pepole();
+       p.setID(101);
+       p.setName("raj");
+       p.setsalary(24000);
+       
+       System.out.println(p.getID()+" "+p.getName()+" "+p.getSalary());
+	}
+
+}
